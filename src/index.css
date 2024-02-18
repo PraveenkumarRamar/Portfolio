@@ -1,13 +1,241 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    /* background-color: black; */
+    /* color: white ; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        /* bottom, image */
+        url(https://webiotic.wpenginepowered.com/wp-content/uploads/best-framework-for-app-development-header-webiotic.jpg);
+}
+
+.nav-bar {
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* position: relative; */
+    /* Full width */
+    background-color: grey;
+    opacity: 0.5;
+}
+
+.content {
+    text-align: center;
+    color: wheat;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 6rem;
+    width: 100%;
+}
+
+
+.btns {
+    padding: 1.5rem;
+    cursor: pointer;
+    /* margin: 3rem; */
+    display: inline;
+    background: linear-gradient(to bottom, #33ccff 0%, #000066 100%);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: color, 3s;
+}
+
+.btns:hover {
+    color: white;
+    background: linear-gradient(to bottom, #33ccff 0%, #003366 100%);
+    transition: 2s;
+}
+
+#project {
+    text-align: center;
+    width: 100%;
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        /* bottom, image */
+        url(https://images.prismic.io//intuzwebsite/d394de11-2b7f-4a72-a3e0-c876f7356a40_Main.png?w=1200&q=80&auto=format,compress&fm=png8);
+}
+
+
+.cards {
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes heading {
+    0% {
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        left: 0px;
+    }
+
+    25% {
+        background: linear-gradient(to top, #3399ff 0%, #ff99cc 100%);
+        left: 100px;
+
+    }
+
+    50% {
+        background: linear-gradient(to top, #3399ff 0%, #ff33cc 100%);
+        left: 0px;
+    }
+
+    75% {
+        background: linear-gradient(to top, #3399ff 0%, #cc0099 100%);
+        left: 100px;
+    }
+
+    100% {
+        background: linear-gradient(to top, #3399ff 0%, #993399 100%);
+        left: 0px;
+    }
+}
+
+.proj-title {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    animation-name: heading;
+    text-shadow: 2px 2px 4px #000000;
+    display: inline;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.proj-title:hover {
+    color: rgb(245, 238, 238) !important;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+#about {
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 1rem;
+    width: 100%;
+}
+
+.about-cont {
+    text-align: center;
+    font-size: larger;
+}
+
+.about-title {
+    font-size: 4rem;
+    text-shadow: 5px 5px 3px rgb(218, 208, 208);
+}
+
+.image>img {
+    width: 11rem;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+}
+
+.image>img:hover {
+    width: 14rem;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    padding: 5rem;
+}
+
+.content-buttons {
+    margin: 3rem;
+}
+
+#skill {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        /* bottom, image */
+        url(https://images.prismic.io//intuzwebsite/d394de11-2b7f-4a72-a3e0-c876f7356a40_Main.png?w=1200&q=80&auto=format,compress&fm=png8);
+}
+
+.skill-img {
+    margin: 1.8rem;
+    width: 8rem;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    /* border-color: -moz-linear-gradient(top, #555555, #111111); */
+    padding: .5rem;
+}
+
+.skill-title {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 5px 5px 3px rgb(0, 179, 255);
+}
+#contact{
+    /* text-align: center; */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+background-image: url('https://i.pinimg.com/474x/b2/c8/15/b2c81552593fea43777eeb1367b142bb.jpg');
+}
+.contact-title{
+    font-size: 5rem;
+    padding: 2rem;
+    color: white;
+    text-shadow: 5px 5px 3px rgb(50, 118, 147);
+}
+.contact-info >a{
+    text-decoration: none;
+    color:white;
+    float: left;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 3px rgb(0, 179, 255);
+
+}
+.contact-info >a:hover{
+    color:goldenrod;
+    text-shadow: 5px 5px 3px goldenrod;
+
+    transition: 1.5s;
+}
+.contact-div{
+    display: flex;
+    justify-content: space-around;
+}
+i{
+    margin:1rem
+}
+.message-box{
+    font-size: 1.1rem;
+
+}
+.footer-bar{
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(1, 0, 0);
+}
+.footer-bar > div{
+    float: right;
+    color: grey;
+    text-shadow: 5px 5px 3px grey;
 }
