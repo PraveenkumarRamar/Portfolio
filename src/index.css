@@ -7,6 +7,7 @@
 }
 
 .header {
+    padding: 1rem;
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(rgba(0, 0, 0, 0.7),
@@ -30,7 +31,7 @@
 
 .content {
     text-align: center;
-    color: wheat;
+    color: rgb(253, 253, 253);
     font-size: 2rem;
     text-shadow: 2px 2px 4px #000000;
     padding: 6rem;
@@ -112,6 +113,7 @@
     position: relative;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    transition: color,2s;
 }
 
 .proj-title:hover {
@@ -143,6 +145,7 @@
     width: 11rem;
     border-radius: 20px;
     border: 2px solid goldenrod;
+    transition: width,2s;
 }
 
 .image>img:hover {
@@ -210,12 +213,12 @@ background-image: url('https://i.pinimg.com/474x/b2/c8/15/b2c81552593fea43777eeb
     float: left;
     font-size: 1.5rem;
     text-shadow: 5px 5px 3px rgb(0, 179, 255);
+    transition: color, 1.5s;
 
 }
 .contact-info >a:hover{
     color:goldenrod;
     text-shadow: 5px 5px 3px goldenrod;
-
     transition: 1.5s;
 }
 .contact-div{
