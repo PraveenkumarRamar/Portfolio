@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 
 function Homepage() {
     return <>
-        <div className='main'>
-                <div id='home' className='content'>
+        <div className='main d-flex justify-content-center'>
+                <div  className='content'>
                     <p>Hello 👋 <br />
                         I'm Praveenkumar - curious<br />
                         <b>Full Stack Devloper</b><br />

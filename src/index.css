@@ -7,14 +7,18 @@
 }
 
 .main {
-    padding: 3.7rem;
-    /* height: auto; */
+    
+    /* top: 20%; */
+    position:static;
+    height: 100vh ;
+    text-align: center;
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)),
         /* bottom, image */
         url(https://webiotic.wpenginepowered.com/wp-content/uploads/best-framework-for-app-development-header-webiotic.jpg);
+
 }
 
 .main1 {
@@ -34,12 +38,18 @@
 .content {
     text-align: center;
     color: rgb(253, 253, 253);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 4px #000000;
-    padding: 3.7rem;
+    position:relative;
+    top: 6rem;
+    padding: 4rem;
     width: 100%;
 }
 
+.content-buttons {
+    position: relative;
+    top: 2rem;
+}
 
 .btns {
     padding: 1.5rem;
@@ -162,10 +172,6 @@
     justify-content: space-around;
     /* padding: 2rem; */
     padding: 3rem;
-}
-
-.content-buttons {
-    margin: 3rem;
 }
 
 #skill {
