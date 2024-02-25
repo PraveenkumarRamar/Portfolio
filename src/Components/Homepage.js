@@ -19,7 +19,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className='footer-bar'>
+            <div className='footer-bar d-flex justify-content-end '>
                 <div>
                     Designed and Devloped By <b>PRAVEENKUMAR RAMAR</b>
                 </div>
