@@ -6,8 +6,9 @@
     /* color: white ; */
 }
 
-.header {
-    padding: 1rem;
+.main {
+    padding: 3.7rem;
+    /* height: auto; */
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(rgba(0, 0, 0, 0.7),
@@ -16,7 +17,7 @@
         url(https://webiotic.wpenginepowered.com/wp-content/uploads/best-framework-for-app-development-header-webiotic.jpg);
 }
 
-.nav-bar {
+.main1 {
     overflow: hidden;
     position: fixed;
     /* Set the navbar to fixed position */
@@ -26,15 +27,16 @@
     /* position: relative; */
     /* Full width */
     background-color: grey;
-    opacity: 0.5;
+
 }
+
 
 .content {
     text-align: center;
     color: rgb(253, 253, 253);
     font-size: 2rem;
     text-shadow: 2px 2px 4px #000000;
-    padding: 6rem;
+    padding: 3.7rem;
     width: 100%;
 }
 
@@ -57,7 +59,7 @@
 }
 
 #project {
-    text-align: center;
+    padding: 3rem;
     width: 100%;
     background:
         /* top, transparent black, faked with gradient */
@@ -113,7 +115,7 @@
     position: relative;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    transition: color,2s;
+    transition: color, 2s;
 }
 
 .proj-title:hover {
@@ -127,7 +129,7 @@
     text-align: center;
     color: white;
     background-color: #000000;
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -137,19 +139,20 @@
 }
 
 .about-title {
+    padding: 1rem;
     font-size: 4rem;
     text-shadow: 5px 5px 3px rgb(218, 208, 208);
 }
 
 .image>img {
-    width: 11rem;
+    width: 10rem;
     border-radius: 20px;
     border: 2px solid goldenrod;
-    transition: width,2s;
+    transition: width, 2s;
 }
 
 .image>img:hover {
-    width: 14rem;
+    width: 13rem;
     border-radius: 40px;
     transition: 1s;
 }
@@ -157,8 +160,8 @@
 .details {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-    padding: 5rem;
+    /* padding: 2rem; */
+    padding: 3rem;
 }
 
 .content-buttons {
@@ -192,52 +195,61 @@
     color: white;
     text-shadow: 5px 5px 3px rgb(0, 179, 255);
 }
-#contact{
+
+#contact {
     /* text-align: center; */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2rem;
-background-image: url('https://i.pinimg.com/474x/b2/c8/15/b2c81552593fea43777eeb1367b142bb.jpg');
+    background-image: url('https://i.pinimg.com/474x/b2/c8/15/b2c81552593fea43777eeb1367b142bb.jpg');
 }
-.contact-title{
+
+.contact-title {
     font-size: 5rem;
     padding: 2rem;
     color: white;
     text-shadow: 5px 5px 3px rgb(50, 118, 147);
 }
-.contact-info >a{
+
+.contact-info>a {
     text-decoration: none;
-    color:white;
+    color: white;
     float: left;
     font-size: 1.5rem;
     text-shadow: 5px 5px 3px rgb(0, 179, 255);
     transition: color, 1.5s;
 
 }
-.contact-info >a:hover{
-    color:goldenrod;
+
+.contact-info>a:hover {
+    color: goldenrod;
     text-shadow: 5px 5px 3px goldenrod;
     transition: 1.5s;
 }
-.contact-div{
+
+.contact-div {
     display: flex;
     justify-content: space-around;
 }
-i{
-    margin:1rem
+
+i {
+    margin: 1rem
 }
-.message-box{
+
+.message-box {
     font-size: 1.1rem;
 
 }
-.footer-bar{
+
+.footer-bar {
     width: 100%;
     padding: 2rem;
     background-color: rgb(1, 0, 0);
 }
-.footer-bar > div{
+
+.footer-bar>div {
     float: right;
     color: grey;
     text-shadow: 5px 5px 3px grey;
